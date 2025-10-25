@@ -1,0 +1,44 @@
+{
+  "collectionName": "components_project_project_items",
+  "info": {
+    "displayName": "project_item",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "slug": {
+      "type": "string",
+      "required": true
+    },
+    "status": {
+      "type": "enumeration",
+      "enum": [
+        "Published",
+        "Not Published",
+        "Open Source"
+      ],
+      "required": true,
+      "default": "Published"
+    },
+    "technologies": {
+      "displayName": "icon",
+      "type": "component",
+      "repeatable": true,
+      "component": "project.icon",
+      "required": true
+    },
+    "thumbnail": {
+      "allowedTypes": [
+        "images",
+        "videos"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    }
+  }
+}
